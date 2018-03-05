@@ -7,9 +7,18 @@
     android:orientation="vertical"
     tools:context="com.bearyinnovative.anndroid_sdk.MainActivity">
 
-    <com.bearyinnovative.horcrux.ui.chat.conversation.BearyConversationView
-        android:id="@+id/conversation_list"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.bearyinnovative.horcrux.ui.view.BottomNavigationViewEx
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/red2"
+        app:itemTextColor="@color/red2"
+        app:menu="@menu/menu_main_bottom" />
 
 </LinearLayout>
