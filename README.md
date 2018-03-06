@@ -1,4 +1,4 @@
-# Anndroid-SDK
+# Horcrux-SDK-Demo
 这个是接入Bearychat SDK的示例项目。
 
 # Download
@@ -19,6 +19,11 @@ allprojects {
 接下来，您需要在app目录下的`build.gradle`中开启databinding以及依赖库
 ``` gradle
 android {
+
+    defaultConfig {
+        multiDexEnabled true
+    }
+
     dataBinding {
         enabled true
     }
