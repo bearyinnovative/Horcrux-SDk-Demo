@@ -11,7 +11,7 @@
         android:id="@+id/action_contacts"
         android:enabled="true"
         android:icon="@drawable/bottom_tab_contact_icon"
-        android:title="新闻"
+        android:title="联系人"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_files"
