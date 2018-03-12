@@ -1,5 +1,6 @@
 package com.bearyinnovative.anndroid_sdk;
 
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         WatermarkView watermarkView = new WatermarkView(this, null);
+        watermarkView.setWatermark("classTC", 100, 30, Color.argb(60, 169, 169, 169), 48);
         ((ViewGroup) findViewById(android.R.id.content)).addView(watermarkView, -1);
     }
 }
