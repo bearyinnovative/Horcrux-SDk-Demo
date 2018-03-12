@@ -5,10 +5,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ViewGroup;
 
+import com.bearyinnovative.horcrux.ui.chat.conversation.BearyConversationView;
 import com.bearyinnovative.horcrux.ui.view.BottomNavigationViewEx;
-import com.bearyinnovative.horcrux.ui.view.WatermarkView;
+
+import javax.annotation.meta.When;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,12 +43,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         bottomNavigationViewEx.setupWithViewPager(viewPager);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        WatermarkView watermarkView = new WatermarkView(this, null);
-        ((ViewGroup) findViewById(android.R.id.content)).addView(watermarkView, -1);
     }
 }

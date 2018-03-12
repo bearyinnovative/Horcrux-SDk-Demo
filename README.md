@@ -70,7 +70,7 @@ dependencies {
 并且在代码中初始化该view
 ```java
         BearyConversationView bearyConversationView = findViewById(R.id.conversation_list);
-        bearyConversationView.initConversationByParams("beary", "Beary Innovative", "****", "***",true);
+        bearyConversationView.initConversationByParams("beary", "Beary Innovative", "****", "***");
 ```
 
 即可正常使用.
