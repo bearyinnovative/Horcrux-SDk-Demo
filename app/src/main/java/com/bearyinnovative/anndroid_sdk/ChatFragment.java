@@ -38,6 +38,6 @@ public class ChatFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        bearyConversationView.initConversationByParams("beary", "Beary Innovative", "15625430452", "abc962570483",true);
+        bearyConversationView.initConversationByParams("beary", "Beary Innovative", "15625430452", "abc962570483");
     }
 }
